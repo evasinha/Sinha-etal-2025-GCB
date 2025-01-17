@@ -1,0 +1,10 @@
+For the GSWP3 compsets, it will run 70 years (through 1920-01-01) using the 1901-1920 forcing. When that is finsihed, you will need to go to the case_scripts directory and make the following changes:
+ 
+./xmlchange DATM_CLMNCEP_YR_START=1920
+./xmlchange DATM_CLMNCEP_YR_END=1980
+./xmlchange CONTINUE_RUN=TRUE
+./xmlchange STOP_N=60
+./xmlchange DATM_CLMNCEP_YR_ALIGN=1920
+
+Then you area ready to submit, from this directory:
+./case.submit
